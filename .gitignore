@@ -1,0 +1,44 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+.idea/
+.vscode/
+.DS_Store
+
+# Data are downloaded or distributed separately.
+data/*
+!data/README.md
+!data/glucose/
+!data/phone_camera/
+!data/openox/
+data/glucose/*
+data/phone_camera/*
+data/openox/*
+!data/glucose/.gitkeep
+!data/phone_camera/.gitkeep
+!data/openox/.gitkeep
+
+# Generated artifacts and private checkpoints.
+outputs/*
+!outputs/.gitkeep
+weights/
+checkpoints/
+*.pt
+*.pth
+*.ckpt
+*.npy
+*.npz
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+*.log
+
+# Keep the public hardware-response workbook used by CRSL.
+*.xlsx
+!src/Spectral Distribution Curves.xlsx
