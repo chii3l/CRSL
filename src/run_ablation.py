@@ -2640,7 +2640,7 @@ def build_base_params(provider, args):
         "spectral_step": args.spectral_step,
         "spectral_normalize": "sum",
         "legacy_channel_order": ["1200", "1300", "1460", "1550", "665", "905"],
-        "use_abs": True,
+        "use_abs": False,
         "spectral_hidden": 64,
         "spectral_fusion_mode": "concat",
         "spectral_gate_init": -4.0,
