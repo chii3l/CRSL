@@ -185,7 +185,7 @@ class Traning_and_Evaluation():
             spectral_step=train_para.get('spectral_step', 5.0),
             normalize=train_para.get('spectral_normalize', 'sum'),
             legacy_channel_order=train_para.get('legacy_channel_order', None),
-            use_abs=train_para.get('use_abs', True))
+            use_abs=train_para.get('use_abs', False))
         return H.astype(np.float32), wavelengths.astype(np.float32)
 
     def __create_model(self, train_para, x_OP_shape=None):
